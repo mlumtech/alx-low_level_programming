@@ -1,17 +1,13 @@
 #include <stdio.h>
 
 /**
+ * main - Prints the sizeof many var types
  *
- * * main - Prints the sizeof many var types
- *
- * *
- *
- * * Return: Always 0 (Success)
- *
- * */
+ * Description:Using main function
+ * Return: Always 0
+ */
 
 int main(void)
-
 {
 
 	char a;
