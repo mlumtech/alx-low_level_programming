@@ -4,16 +4,19 @@
  * factorial - returns the factorial of a given number
  * @s: number to be used
  *
- * Return: the factorial of the number
+ * Return: If n > 0 - the factorial of n.
+ * 	If n < 0 - 1 to indicate an error.
  */
 int factorial(int n)
 {
-	int next_factorial;
+	int result = n;
 
 	if (n < 0)
 		return (-1);
 	else if (n == 0)
 		return (1);
-	next_factorial = factorial(n - 1);
-	return (n * next_factorial);
+
+	result *= factorial(n - 1);
+
+	return (result);
 }
